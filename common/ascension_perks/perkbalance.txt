@@ -2055,3 +2055,37 @@ ap_archaeoengineers = {
 		}
 	}
 }
+
+#################
+# TOXIC ASCENSION PERKS
+#################
+
+ap_detox = {
+	potential = {
+		host_has_dlc = "Toxoids Species Pack"
+		NOT = {
+			has_ascension_perk = ap_detox
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_tech_climate_restoration"
+			has_technology = tech_climate_restoration
+		}
+	}
+
+	on_enabled = {
+		custom_tooltip = "detox_tox_worlds"
+	}
+
+	modifier = {
+		pop_environment_tolerance = 0.15
+		habitability_floor_add = 0.25
+		habitability_ceil_add = 0.25
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
