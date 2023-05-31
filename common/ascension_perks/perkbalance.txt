@@ -826,7 +826,9 @@ ap_transcendent_learning = {
 		
 	}
 	modifier = {
-		leader_skill_levels = 4
+		negative_traits_leader = -1
+		country_leader_cap_add = 4
+		country_leader_pool_size = 2
 		species_leader_exp_gain = 0.50
 		planet_researchers_upkeep_mult = -0.25
 	}
